@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="5dp"
+    android:backgroundTint="@color/grey"
+
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:id="@+id/news_ImageView"
+            android:src="@mipmap/ic_launcher"
+            android:scaleType="centerCrop"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/newsTitleTV"
+            android:layout_below="@id/news_ImageView"
+            android:text="news headline ugdfg"
+            android:textColor="@color/yellow"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="18dp"
+            android:padding="4dp"
+            android:maxLines="2"
+            android:layout_margin="4dp"
+
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="sub heading"
+            android:layout_below="@id/newsTitleTV"
+            android:id="@+id/news_sub_head_TV"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:maxLines="3"
+            android:layout_margin="3dp"
+            android:padding="3dp"
+
+
+            />
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
